@@ -1,0 +1,98 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  /* Page Title */
+  #title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Description */
+  #description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Survey Form */
+  #survey-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Placeholder Styling */
+  input::placeholder, textarea::placeholder {
+    color: #aaa;
+  }
+  
+  /* Textarea */
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    #survey-form {
+      padding: 15px;
+    }
+  
+    #title {
+      font-size: 2rem;
+    }
+  
+    #description {
+      font-size: 1rem;
+    }
+  
+    label {
+      font-size: 0.9rem;
+    }
+  }
+  

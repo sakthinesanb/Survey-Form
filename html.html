@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Page Title -->
+  <h1 id="title">Survey Form</h1>
+
+  <!-- Short Description -->
+  <p id="description">
+    Please take a few moments to complete this survey. Your feedback is important to us!
+  </p>
+
+  <!-- Survey Form -->
+  <form id="survey-form">
+    
+    <!-- Name Input Field -->
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" type="text" name="name" placeholder="Enter your name" required>
+    
+    <!-- Email Input Field -->
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" name="email" placeholder="Enter your email" required>
+    
+    <!-- Number Input Field -->
+    <label id="number-label" for="number">Age:</label>
+    <input id="number" type="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+    
+    <!-- Dropdown Selection -->
+    <label for="dropdown">Favorite Programming Language:</label>
+    <select id="dropdown" name="language" required>
+      <option value="">Select a language</option>
+      <option value="javascript">JavaScript</option>
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+      <option value="c++">C++</option>
+    </select>
+
+    <!-- Radio Buttons for Experience -->
+    <label>Experience Level:</label>
+    <input type="radio" id="beginner" name="experience" value="beginner">
+    <label for="beginner">Beginner</label>
+    <input type="radio" id="intermediate" name="experience" value="intermediate">
+    <label for="intermediate">Intermediate</label>
+    <input type="radio" id="advanced" name="experience" value="advanced">
+    <label for="advanced">Advanced</label>
+    
+    <!-- Checkboxes for Preferred Features -->
+    <label>Preferred Features:</label>
+    <input type="checkbox" id="feature1" name="features" value="speed">
+    <label for="feature1">Speed</label>
+    <input type="checkbox" id="feature2" name="features" value="security">
+    <label for="feature2">Security</label>
+    <input type="checkbox" id="feature3" name="features" value="usability">
+    <label for="feature3">Usability</label>
+    <input type="checkbox" id="feature4" name="features" value="customizability">
+    <label for="feature4">Customizability</label>
+
+    <!-- Textarea for Additional Comments -->
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Enter any comments here" rows="5" cols="40"></textarea>
+
+    <!-- Submit Button -->
+    <button id="submit" type="submit">Submit</button>
+    
+  </form>
+
+</body>
+</html>
